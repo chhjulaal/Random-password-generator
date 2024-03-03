@@ -1,0 +1,149 @@
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #00203a;
+  color: #fff;
+}
+
+.box {
+  position: relative;
+  top: 170px;
+  margin: 10px 234px auto;
+  text-align: start;
+  width: 400px;
+  height: 200px;
+  /* border: 1px solid black; */
+}
+
+#h31 {
+  color: #007d4b;
+}
+
+#h32 {
+  color: #007d4b;
+}
+
+#h32::before {
+  content: " ";
+  position: absolute;
+  top: 90px;
+  width: 72%;
+  height: 2px;
+  background-color: #007d4b;
+}
+
+.display {
+  width: 94%;
+  padding: 15px 10px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+}
+button {
+  font-size: large;
+  width: 50%;
+  height: 20%;
+  padding: 13px;
+  font-size: 13px;
+  border-radius: 6px;
+  background-color: #007d4b;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  border: 1px solid;
+  cursor: pointer;
+}
+button:active {
+  border: 1px solid rgb(58, 59, 60);
+  cursor: pointer;
+}
+
+button span img {
+  transform: perspective(10px);
+}
+
+input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+.fa-copy:before {
+  content: "\f0c5";
+  position: absolute;
+  top: -8px;
+  right: 161px;
+  color: #007d4b;
+  cursor: pointer;
+}
+
+p {
+  display: none;
+}
+.i-am {
+  display: none;
+}
+.text {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+  .box {
+    position: relative;
+    top: 170px;
+    margin: auto 10px;
+    text-align: start;
+    width: 400px;
+    height: 200px;
+  }
+  .display {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+  }
+  .fa-copy:before {
+    content: "\f0c5";
+    position: absolute;
+    top: -8px;
+    right: 161px;
+    color: #007d4b;
+    cursor: pointer;
+  }
+  p {
+    display: block;
+    color: #6e6513;
+  }
+  .text {
+    display: block;
+    color: #007d4b;
+
+    height: 20px;
+    position: relative;
+    top: 450px;
+    left: 10px;
+    font-size: xx-large;
+    margin: 9px;
+    font-weight: bold;
+  }
+  .i-am {
+    display: block;
+    color: #007d4b;
+    height: 20px;
+    position: relative;
+    top: 430px;
+    left: 10px;
+    font-size: xx-large;
+    margin: 9px;
+    font-weight: 900;
+  }
+}
